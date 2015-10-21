@@ -147,7 +147,7 @@ var g_avgrund = $('.btn-create').avgrund({
 	onBlurContainer: '.container',
 	body: window.top.document.getElementsByTagName("div")[0],
 	template: function(obj){
-		return '<iframe style="width:100%;height:100%;" src="<?php echo $mbs_appenv->toURL('list')?>'+'"></iframe>';
+		return '<iframe style="width:100%;height:500px;" src="<?php echo $mbs_appenv->toURL('list')?>'+'"></iframe>';
 	}
 });
 
