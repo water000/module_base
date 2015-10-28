@@ -16,7 +16,7 @@ class CUserDef extends CModDef {
 			self::TBDEF => array(
 				'user_info' => '(
 					id                   int unsigned auto_increment not null,
-				    name                 varchar(8),
+				    name                 varchar(16),
 				    password             char(38),
 				    organization         varchar(32),
 				    phone                char(11),
@@ -28,7 +28,7 @@ class CUserDef extends CModDef {
 				    class_id             int unsigned,
 				    reg_time             int unsigned,
 				    reg_ip               varchar(32),
-					pwd_modify_count     int unsigned not null,
+					pwd_modify_count     int unsigned,
 					primary key(id),
 					unique key(phone)
 				)',
